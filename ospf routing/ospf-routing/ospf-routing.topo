@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="FF3492F7-9FD0-4fe4-A4E8-750D60116163" name="R2" poe="0" model="Router" settings="" system_mac="54-89-98-B5-50-A0" com_port="2001" bootmode="0" cx="594.644592" cy="136.272720" edit_left="623" edit_top="188">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+        <dev id="384366A0-02E2-4260-A816-11D56BE2E850" name="R3" poe="0" model="Router" settings="" system_mac="54-89-98-A8-08-09" com_port="2002" bootmode="0" cx="478.231384" cy="324.314056" edit_left="505" edit_top="378">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+        <dev id="57032BB6-85B7-413e-98C2-E3A47EFF8410" name="PC1" poe="0" model="PC" settings=" -simpc_ip 10.0.0.254  -simpc_mask 255.255.255.0  -simpc_gateway 10.0.0.1  -simpc_mac 54-89-98-11-11-11  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-79-4F-E3" com_port="0" bootmode="0" cx="127.421478" cy="136.537186" edit_left="154" edit_top="190">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="F5BA0021-FA8C-430b-8607-14792F71D62D" name="PC2" poe="0" model="PC" settings=" -simpc_ip 20.0.0.254  -simpc_mask 255.255.255.0  -simpc_gateway 20.0.0.2  -simpc_mac 54-89-98-22-22-22  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-9F-31-09" com_port="0" bootmode="0" cx="858.264404" cy="136.710739" edit_left="885" edit_top="190">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="855F4941-8866-4683-98AF-415AED280334" name="R1" poe="0" model="Router" settings="" system_mac="54-89-98-FE-6C-09" com_port="2000" bootmode="0" cx="343.842957" cy="136.404953" edit_left="357" edit_top="186">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="57032BB6-85B7-413e-98C2-E3A47EFF8410" destDeviceID="855F4941-8866-4683-98AF-415AED280334">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="197.183762" srcBoundRect_Y="163.000000" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="2" tarBoundRectIsMoved="1" tarBoundRect_X="326.816223" tarBoundRect_Y="163.000000" tarOffset_X="-39.000000" tarOffset_Y="-19.000000" />
+        </line>
+        <line srcDeviceID="FF3492F7-9FD0-4fe4-A4E8-750D60116163" destDeviceID="F5BA0021-FA8C-430b-8607-14792F71D62D">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="664.183777" srcBoundRect_Y="163.000000" srcOffset_X="-1.000000" srcOffset_Y="5.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="841.816223" tarBoundRect_Y="163.000000" tarOffset_X="-54.000000" tarOffset_Y="-17.000000" />
+        </line>
+        <line srcDeviceID="855F4941-8866-4683-98AF-415AED280334" destDeviceID="FF3492F7-9FD0-4fe4-A4E8-750D60116163">
+            <interfacePair lineName="Copper" srcIndex="3" srcBoundRectIsMoved="1" srcBoundRect_X="413.183777" srcBoundRect_Y="163.000000" srcOffset_X="-5.000000" srcOffset_Y="9.000000" tarIndex="3" tarBoundRectIsMoved="1" tarBoundRect_X="577.816223" tarBoundRect_Y="163.000000" tarOffset_X="-37.000000" tarOffset_Y="7.000000" />
+        </line>
+        <line srcDeviceID="855F4941-8866-4683-98AF-415AED280334" destDeviceID="384366A0-02E2-4260-A816-11D56BE2E850">
+            <interfacePair lineName="Copper" srcIndex="4" srcBoundRectIsMoved="1" srcBoundRect_X="395.188232" srcBoundRect_Y="198.076935" srcOffset_X="-46.000000" srcOffset_Y="6.000000" tarIndex="4" tarBoundRectIsMoved="1" tarBoundRect_X="479.811768" tarBoundRect_Y="315.923065" tarOffset_X="-53.000000" tarOffset_Y="-1.000000" />
+        </line>
+        <line srcDeviceID="384366A0-02E2-4260-A816-11D56BE2E850" destDeviceID="FF3492F7-9FD0-4fe4-A4E8-750D60116163">
+            <interfacePair lineName="Copper" srcIndex="5" srcBoundRectIsMoved="0" srcBoundRect_X="527.676086" srcBoundRect_Y="314.249054" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="5" tarBoundRectIsMoved="1" tarBoundRect_X="598.323914" tarBoundRect_Y="199.750946" tarOffset_X="3.000000" tarOffset_Y="8.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="451" top="134" right="547" bottom="153" content="12.0.0.0/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-256" charset="1" />
+        <txttip left="333" top="256" right="429" bottom="275" content="13.0.0.0/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-256" charset="1" />
+        <txttip left="572" top="258" right="668" bottom="277" content="23.0.0.0/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-256" charset="1" />
+        <txttip left="87" top="116" right="183" bottom="135" content="10.0.0.0/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-256" charset="1" />
+        <txttip left="857" top="112" right="953" bottom="131" content="20.0.0.0/24" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-256" charset="1" />
+        <txttip left="130" top="207" right="168" bottom="226" content=".254" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-256" charset="1" />
+        <txttip left="862" top="206" right="900" bottom="225" content=".254" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-256" charset="1" />
+        <txttip left="683" top="406" right="1020" bottom="613" content="display interface g0/0/0&#x0D;&#x0A;display ip interface brief&#x0D;&#x0A;display ip routing-table&#x0D;&#x0A;display ip routing-table protocol static&#x0D;&#x0A;display fib&#x0D;&#x0A;display arp&#x0D;&#x0A;display ospf peer&#x0D;&#x0A;display ospf peer brief&#x0D;&#x0A;display ospf lsdb&#x0D;&#x0A;display ospf routing&#x0D;&#x0A;display ospf interface all&#x0D;&#x0A;display ospf interface g0/0/1" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-16711681" charset="1" />
+        <txttip left="117" top="409" right="279" bottom="582" content="R1:&#x0D;&#x0A;sysname R1&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A; ip add 10.0.0.1 24&#x0D;&#x0A;int g0/0/1&#x0D;&#x0A; ip add 12.0.0.1 24&#x0D;&#x0A;int g0/0/2&#x0D;&#x0A; ip add 13.0.0.1 24&#x0D;&#x0A;int loop0&#x0D;&#x0A; ip add 1.1.1.1 32" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-256" charset="1" />
+        <txttip left="303" top="407" right="465" bottom="580" content="R2:&#x0D;&#x0A;sysname R2&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A; ip add 20.0.0.2 24&#x0D;&#x0A;int g0/0/1&#x0D;&#x0A; ip add 12.0.0.2 24&#x0D;&#x0A;int g0/0/3&#x0D;&#x0A; ip add 23.0.0.2 24&#x0D;&#x0A;int loop0&#x0D;&#x0A; ip add 2.2.2.2 32" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-256" charset="1" />
+        <txttip left="488" top="405" right="650" bottom="544" content="R3:&#x0D;&#x0A;sysname R3&#x0D;&#x0A;int g0/0/2&#x0D;&#x0A; ip add 13.0.0.3 24&#x0D;&#x0A;int g0/0/3&#x0D;&#x0A; ip add 23.0.0.3 24&#x0D;&#x0A;int loop0&#x0D;&#x0A; ip add 3.3.3.3 32" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-256" charset="1" />
+        <txttip left="537" top="333" right="624" bottom="369" content="loop0&#x0D;&#x0A;3.3.3.3/32" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-256" charset="1" />
+        <txttip left="576" top="98" right="663" bottom="134" content="loop0&#x0D;&#x0A;2.2.2.2/32" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-256" charset="1" />
+        <txttip left="327" top="99" right="414" bottom="135" content="loop0&#x0D;&#x0A;1.1.1.1/32" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-256" charset="1" />
+        <txttip left="84" top="646" right="321" bottom="802" content="R1:&#x0D;&#x0A;ospf 1 router-id 1.1.1.1&#x0D;&#x0A; bandwidth-reference 1000&#x0D;&#x0A; area 0&#x0D;&#x0A;  network 10.0.0.0 0.0.0.255&#x0D;&#x0A;  network 12.0.0.0 0.0.0.255&#x0D;&#x0A;  network 13.0.0.0 0.0.0.255&#x0D;&#x0A;  network 1.1.1.1 0.0.0.0&#x0D;&#x0A;" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8323200" charset="1" />
+        <txttip left="353" top="647" right="590" bottom="803" content="R2:&#x0D;&#x0A;ospf 1 router-id 2.2.2.2&#x0D;&#x0A; bandwidth-reference 1000&#x0D;&#x0A; area 0&#x0D;&#x0A;  network 20.0.0.0 0.0.0.255&#x0D;&#x0A;  network 12.0.0.0 0.0.0.255&#x0D;&#x0A;  network 23.0.0.0 0.0.0.255&#x0D;&#x0A;  network 2.2.2.2 0.0.0.0&#x0D;&#x0A;" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8323200" charset="1" />
+        <txttip left="602" top="647" right="839" bottom="769" content="R3:&#x0D;&#x0A;ospf 1 router-id 3.3.3.3&#x0D;&#x0A; bandwidth-reference 1000&#x0D;&#x0A; area 0&#x0D;&#x0A;  network 13.0.0.0 0.0.0.255&#x0D;&#x0A;  network 23.0.0.0 0.0.0.255&#x0D;&#x0A;  network 3.3.3.3 0.0.0.0" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-8323200" charset="1" />
+    </txttips>
+</topo>
