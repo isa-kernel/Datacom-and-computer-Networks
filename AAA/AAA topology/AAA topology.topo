@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.200T">
+    <devices>
+        <dev id="965A7CE0-9271-4371-9961-31EFCBC93984" name="PC1" poe="0" model="PC" settings=" -simpc_ip 0.0.0.0  -simpc_mask 0.0.0.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-7C-63-96  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-7C-63-96" com_port="0" bootmode="0" cx="102.000000" cy="616.000000" edit_left="129" edit_top="670">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="DF072156-F4CA-4032-B57F-123C4D2F6CC3" name="PC2" poe="0" model="PC" settings=" -simpc_ip 0.0.0.0  -simpc_mask 0.0.0.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-9E-65-77  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-9E-65-77" com_port="0" bootmode="0" cx="298.000000" cy="628.000000" edit_left="325" edit_top="682">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="87872AA0-AB2C-410c-B7A5-2B146188A153" name="LSW1" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-18-3F-5F" com_port="2000" bootmode="0" cx="215.000000" cy="452.000000" edit_left="242" edit_top="506">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="7391D80E-ED74-4a92-9304-E03B7272F2E9" name="LSW2" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-5E-7A-24" com_port="2001" bootmode="0" cx="615.000000" cy="447.000000" edit_left="642" edit_top="501">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="32D5089C-4646-468f-B7B1-29BBB196F1E9" name="PC3" poe="0" model="PC" settings=" -simpc_ip 0.0.0.0  -simpc_mask 0.0.0.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-2C-0B-6B  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-2C-0B-6B" com_port="0" bootmode="0" cx="710.000000" cy="646.000000" edit_left="737" edit_top="700">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="09D07191-3594-417a-98B6-F3433495D09F" name="R1" poe="0" model="Router" settings="" system_mac="54-89-98-52-7B-BC" com_port="2002" bootmode="0" cx="439.000000" cy="243.000000" edit_left="466" edit_top="297">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="965A7CE0-9271-4371-9961-31EFCBC93984" destDeviceID="87872AA0-AB2C-410c-B7A5-2B146188A153">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="153.501648" srcBoundRect_Y="607.440063" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="1" tarBoundRectIsMoved="0" tarBoundRect_X="217.498352" tarBoundRect_Y="514.559937" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="DF072156-F4CA-4032-B57F-123C4D2F6CC3" destDeviceID="87872AA0-AB2C-410c-B7A5-2B146188A153">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="306.580414" srcBoundRect_Y="615.941650" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="2" tarBoundRectIsMoved="0" tarBoundRect_X="260.419586" tarBoundRect_Y="518.058350" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="87872AA0-AB2C-410c-B7A5-2B146188A153" destDeviceID="09D07191-3594-417a-98B6-F3433495D09F">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="273.574402" srcBoundRect_Y="449.539948" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="2" tarBoundRectIsMoved="0" tarBoundRect_X="434.425598" tarBoundRect_Y="299.460052" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="09D07191-3594-417a-98B6-F3433495D09F" destDeviceID="7391D80E-ED74-4a92-9304-E03B7272F2E9">
+            <interfacePair lineName="Copper" srcIndex="3" srcBoundRectIsMoved="0" srcBoundRect_X="494.209076" srcBoundRect_Y="302.696869" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="613.790955" tarBoundRect_Y="441.303131" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="32D5089C-4646-468f-B7B1-29BBB196F1E9" destDeviceID="7391D80E-ED74-4a92-9304-E03B7272F2E9">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="718.395874" srcBoundRect_Y="634.029175" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="1" tarBoundRectIsMoved="0" tarBoundRect_X="660.604126" tarBoundRect_Y="512.970825" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="279" top="302" right="396" bottom="319" content="192.168.10.1/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="595" top="302" right="712" bottom="319" content="192.168.10.1/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="89" top="691" right="214" bottom="708" content="192.168.10.10/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="719" top="723" right="844" bottom="740" content="192.168.10.30/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="300" top="706" right="425" bottom="723" content="192.168.20.10/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="200" top="64" right="272" bottom="96" content="[R1] aaa&#x0D;&#x0A;[R1-aaa]" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="198" top="101" right="700" bottom="149" content="[R1-aaa] local-user admin password irreversible-cipher Huawei@123&#x0D;&#x0A;[R1-aaa] local-user admin privilege level 15&#x0D;&#x0A;[R1-aaa] local-user admin service-type telnet" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="198" top="167" right="829" bottom="231" content="[R1-aaa] authentication-scheme local_auth&#x0D;&#x0A;[R1-aaa-authen-local_auth] authentication-mode local&#x0D;&#x0A;[R1-aaa-authen-local_auth] quit&#x0D;&#x0A;&gt;&gt;This tells R1 to authenticate users against its locally configured user database." fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1096" top="203" right="1530" bottom="298" content="&gt;&gt;Apply the authentication scheme to the default domain&#x0D;&#x0A;&#x0D;&#x0A;[R1-aaa] domain default&#x0D;&#x0A;[R1-aaa-domain-default] authentication-scheme local_auth&#x0D;&#x0A;[R1-aaa-domain-default] quit&#x0D;&#x0A;[R1-aaa] quit" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1095" top="304" right="1288" bottom="321" content="[R1] telnet server enable" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1095" top="334" right="1386" bottom="398" content="[R1] user-interface vty 0 4&#x0D;&#x0A;[R1-ui-vty0-4] authentication-mode aaa&#x0D;&#x0A;[R1-ui-vty0-4] protocol inbound telnet&#x0D;&#x0A;[R1-ui-vty0-4] quitz" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1102" top="410" right="1363" bottom="474" content="&lt;R1&gt; display local-&#x0D;&#x0A;&lt;R1&gt; display aaa configuration&#x0D;&#x0A;&lt;R1&gt; display current-configuration&#x0D;&#x0A;" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1101" top="504" right="1324" bottom="536" content="&lt;Huawei&gt; telnet 192.168.10.1&#x0D;&#x0A;save" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
